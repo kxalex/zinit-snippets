@@ -48,7 +48,7 @@ function git_main_branch() {
 #     return
 #   fi
 # done
-  echo master
+  echo ${GIT_MASTER_BRANCH:-master}
 }
 
 # Check for develop and similarly named branches
@@ -61,7 +61,7 @@ function git_develop_branch() {
 #     return
 #   fi
 # done
-  echo develop
+  echo ${GIT_DEVELOP_BRANCH:-develop}
 }
 
 #
